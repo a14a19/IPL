@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Caveat Brush', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+body{
+    max-width: 2560px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1582788531956-e0556b4390e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+    backdrop-filter: blur(5px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+}
+header{
+    position: relative;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    right: 0%;
+    left: 0%;    
+}
+main{
+    padding-top: 80px;
+}
+footer{
+    display: flex;
+    color: whitesmoke;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+.dis-none{
+    display: none !important;
+}
+
+/* for main --------------------- */
+
+#main-m{
+    height: 100%;
+    width: 100%;
+}
+.ipl-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+#teams-m{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 30px;
+    margin: 30px auto;
+}
+.team-sub-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgTeams{
+    height: 225px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.imgTeams:hover{
+    transform: translate(0px, -12px);
+}
+#search{
+    margin: 25px;
+    border-radius: 5px;
+    width: 25%;
+    height: 28px;
+    border: none;
+    padding: 10px;
+}
+#add-btn{
+    background: #0000FF;
+    color: whitesmoke;
+    border: none;
+    height: 35px;
+    width: 50px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#add-btn:hover{
+    background: #0000c4ee;
+}
+#search-result{
+    position: absolute;
+    top: 70%;
+    left: 35.5%;
+    width: 25%;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+.sub-search{
+    padding: 5px 15px;
+    color: rgba(0, 0, 0, 0.750);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+#player-form{
+    position: relative;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    left: 0%;
+    right: 0%;
+    background: whitesmoke;
+    width: 50%;
+    z-index: 100;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+#pName, #pPrice, #description, #img-player, #p-team, #submit{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 40%;
+}
+.is-playing{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+#submit{
+    background: #0000FF;
+    color: whitesmoke;
+    cursor: pointer;
+}
+#submit:hover{
+    background: #0000c4ee;
+}
+#close-form {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* for team-details ------------------------------------- */
+
+.logo-td{
+    cursor: pointer;
+    height: 100px;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.logo-teams {
+    height: 100px;
+}
+.name-logo-td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(245, 245, 245, 0.5);
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5), transparent);
+    color: whitesmoke;
+    margin-top: 40px;
+    padding: 0 3%;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 1.2px;
+}
+.name-logo-td h3 {
+    font-size: 26px;
+}
+.trophy-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 3%;
+    padding-bottom: 10px;
+    background: rgba(245, 245, 245, 0.5);
+}
+.trophy-img {
+    height: 18px;
+    margin: 0px 5px 0px 15px;
+}
+.player-count-td{
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 3%;
+    padding-bottom: 10px;
+    background: rgba(245, 245, 245, 0.5);
+}
+.ol-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.tb, .tbl{
+    background: rgba(245, 245, 245, 0.5);
+    padding-bottom: 20px;
+}
+.tb h3, .tbl h3{
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.2), transparent);
+    color: whitesmoke;
+    padding: 8px 0px 8px 6%;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 1px;
+}
+.tb li, .tbl li{
+    font-weight: 500;
+    margin-left: 8%;
+    padding-bottom: 5px;
+}
+.player-card{
+    background: whitesmoke;
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+    padding: 15px;
+    min-width: 250px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+.player-card:hover {
+    box-shadow: 0px 0px 6px 2px black;
+}
+.player-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.player-img{
+    height: 250px;
+}
+.logo-players{
+    height: 50px;
+}
+.name-logo-P{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* for player details --------------------------------- */
+
+
+#logo-td-p{
+    margin-top: 15px;
+    cursor: pointer;
+}
+#main-p{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 120px;
+    padding-bottom: 78px;
+}
+#img-sub{
+    min-width: 300px;
+}
+#main-img img{
+    height: 350px;
+}
+#team-logo-p img {
+    height: 200px;
+}
+#p-Name{
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+.text-container{
+    background-image: linear-gradient(135deg, rgba(245, 245, 245, 0.5), rgba(0, 0, 0, 0.1), transparent);
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 20px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-h">
+        <input type="text" id="search" placeholder="Search players by team code..." name="search">
+        <div id="search-result" class="search-res"></div>
+        <div class="btn-container">
+            <button id="add-btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <form id="player-form" class="dis-none">
+                <h3>Please Input player details.</h3>
+                <input type="text" id="pName" name="pName" placeholder="Name" required>
+                <select name="p-team" id="p-team" required>
+                    <option value="None">None</option>
+                    <option value="CSK">CSK</option>
+                    <option value="RCB">RCB</option>
+                    <option value="MI">MI</option>
+                    <option value="KKR">KKR</option>
+                    <option value="RR">RR</option>
+                    <option value="SRH">SRH</option>
+                    <option value="DC">DC</option>
+                    <option value="PBKS">PBKS</option>
+                    <option value="GT">GT</option>
+                    <option value="LSG">LSG</option>
+                </select>
+                <input type="text" id="pPrice" name="pPrice" placeholder="Price" required>
+                <div class="is-playing">
+                    <label for="playing">
+                        <input type="radio" id="playing" name="isPlaying" required>
+                        Playing
+                    </label>
+                    <label for="ob">
+                        <input type="radio" id="ob" name="isPlaying" required>
+                        On-bench
+                    </label>
+                </div>
+                <input type="text" id="description" name="description" placeholder="Description" required>
+                <input type="text" id="img-player" name="img-player" placeholder="Image URL">
+                <input type="submit" placeholder="Submit" id="submit" name="submit" required>
+                <div id="close-form">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main id="main-m">
+        <div class="ipl-logo">
+            <img src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" alt="IPL">
+        </div>
+        <div id="teams-m"></div>
+    </main>
+    <footer id="main-f">
+        &copy; Anas Ahmed
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
