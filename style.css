@@ -178,8 +178,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(245, 245, 245, 0.5);
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5), transparent);
+    background: rgb(245, 245, 245);
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.2), transparent);
     color: whitesmoke;
     margin-top: 40px;
     padding: 0 3%;
@@ -197,7 +197,7 @@ footer{
     font-size: 18px;
     padding-left: 3%;
     padding-bottom: 10px;
-    background: rgba(245, 245, 245, 0.5);
+    background: rgb(245, 245, 245);
 }
 .trophy-img {
     height: 18px;
@@ -208,18 +208,18 @@ footer{
     font-size: 18px;
     padding-left: 3%;
     padding-bottom: 10px;
-    background: rgba(245, 245, 245, 0.5);
+    background: rgb(245, 245, 245);
 }
 .ol-container{
     display: grid;
     grid-template-columns: auto auto;
 }
 .tb, .tbl{
-    background: rgba(245, 245, 245, 0.5);
+    background: rgb(245, 245, 245);
     padding-bottom: 20px;
 }
 .tb h3, .tbl h3{
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.2), transparent);
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.15), transparent);
     color: whitesmoke;
     padding: 8px 0px 8px 6%;
     text-shadow: 2px 2px 2px black;
@@ -291,7 +291,7 @@ footer{
     padding-bottom: 10px;
 }
 .text-container{
-    background-image: linear-gradient(135deg, rgba(245, 245, 245, 0.5), rgba(0, 0, 0, 0.1), transparent);
+    background-image: linear-gradient(135deg, rgb(245, 245, 245), rgba(255, 255, 255, 0.5), transparent);
     padding: 10px 15px;
     font-weight: 600;
     font-size: 20px;

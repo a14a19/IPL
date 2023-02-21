@@ -4,7 +4,7 @@ const logoTd = document.getElementById('logo-td');
 
 logoTd.addEventListener('click', (e)=>{
     e.preventDefault()
-    location.pathname = '/index.html'
+    location.pathname = 'IPL/index.html'
 })
 
 function getInitialTodoList() {
@@ -118,7 +118,7 @@ function getInitialTodoList() {
 
                                     playerSubContainer.addEventListener('click', (e)=>{
                                         e.preventDefault()
-                                        location.pathname = "/player-details/player.html"
+                                        location.pathname = "IPL/player-details/player.html"
                                         localStorage.setItem('1', JSON.stringify(`${playerName}`))
                                     })
                                 }

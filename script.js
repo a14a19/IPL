@@ -33,7 +33,7 @@ $(function(){
 
             mainDiv.addEventListener('click', (e)=>{
                 e.preventDefault();
-                location.pathname = '/team-details/team.html';
+                location.pathname = 'IPL/team-details/team.html';
                 console.log([x] == data[x].id);
                 localStorage.setItem('0', `${x}`);
             })

@@ -11,7 +11,7 @@ const logotdP = document.getElementById('logo-td-p')
 
 logotdP.addEventListener('click', (e)=>{
     e.preventDefault()
-    location.pathname = `/index.html`;
+    location.pathname = `IPL/index.html`;
 })
 
 $(function(){
